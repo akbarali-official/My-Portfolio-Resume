@@ -1,0 +1,309 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+
+}
+
+.title {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 6px;
+    color: #0a0a0a;
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-weight: 300;
+
+}
+
+.personal-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+/* --- Global Responsive Section Start --- */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Mobile par side space kam karne ke liye */
+    }
+
+    .personal-info, .main-body {
+        max-width: 100%; /* Full width on mobile */
+        padding: 20px;
+    }
+}
+/* --- Global Responsive Section End --- */
+
+.text-content {
+    flex: 1;
+
+}
+.name h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: #1a2a6c;
+    font-weight: 900;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.img-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    
+}
+
+.main-body {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    color: #1a2a6c;
+    font-size: 1.4rem;
+    border-left: 5px solid #1a2a6c;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.content-text {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+/* --- Header Section Start --- */
+@media (max-width: 600px) {
+    .personal-info {
+        flex-direction: column; /* Image aur Text ek doosre ke upar niche */
+        text-align: center;
+        gap: 20px;
+    }
+
+    .name h1 {
+        font-size: 2.5rem; /* Mobile par naam ka size chota */
+    }
+
+    .contact-info {
+        margin-top: 15px;
+    }
+}
+/* --- Header Section End --- */
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+    
+}
+
+.skill-tag {
+    background-color: #ffffffff;
+    color:#1a2a6c;
+    border: 1px solid #1a2a6c;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: 600px;
+    font-size: 0.9rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+
+}
+.skill-tag:hover {
+    background-color: #1a2a6c;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.main-body {
+    max-width: 800;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* --- Skills Section Start --- */
+@media (max-width: 480px) {
+    .skills-container {
+        justify-content: center; /* Mobile par tags center mein */
+    }
+
+    .skill-tag {
+        padding: 6px 15px;
+        font-size: 0.8rem;
+    }
+}
+/* --- Skills Section End --- */
+.edu-item {
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    color: #333;
+}
+.edu-item p {
+    color: #666;
+    margin: 5px 0;
+    line-height: 1.5;
+
+}
+
+.project-item strong {
+    color: #1a2a6c;
+    font-weight: 600;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+.project-item strong {
+    color: #1a2a6c;
+    font-size: 1.1rem;
+    color: #333;
+    
+}
+
+.project-link {
+    text-decoration: none;
+    background-color:#1a2a6c;
+    color: white !important;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid #1a2a6c;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.project-link:hover {
+    background-color: #f39c12;
+    transform: scale(1.05);
+}
+
+.project-item p {
+    color: #666;
+    margin: 5px 0 20px 0;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+/* --- Education & Projects Start --- */
+@media (max-width: 600px) {
+    .edu-header, .project-header {
+        flex-direction: column; /* Title upar aur Date/Link niche */
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .project-link {
+        display: inline-block;
+        margin-top: 10px;
+        width: 100%; /* Mobile par button full width */
+        text-align: center;
+    }
+}
+/* --- Education & Projects End --- */
+
+.cv-section {
+    margin-top: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.section-title {
+    color: #003366;
+    border-left: 4px solid #003366;
+    padding-left: 12px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.section-content {
+    padding-left: 16px;
+}
+.item-header {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2px;
+    
+}
+
+.item-desc {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0;
+}
+
+.language-grid {
+    display: flex;
+    gap: 30px;
+    font-size: 0.95rem;
+    color: #444;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.footer-line {
+    height: 1px;
+    background-color: #ddd;
+    width: 80%;
+    margin: 0 auto 20px;
+}
+
+.cv-footer {
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 1px solid #e0e0e0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.cv-footer p {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 5px 0;
+}
+.cv-footer a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- Language & Footer Start --- */
+@media (max-width: 480px) {
+    .language-grid {
+        flex-direction: column; /* Language list ek line ke bajaye niche niche */
+        gap: 10px;
+    }
+
+    .cv-footer {
+        padding: 20px 10px;
+    }
+}
+/* --- Language & Footer End --- */
