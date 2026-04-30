@@ -77,6 +77,7 @@ body {
     font-size: 1.4rem;
     border-left: 5px solid #1a2a6c;
     padding-left: 15px;
+    margin-top: 0;
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -185,7 +186,24 @@ body {
     font-size: 1.1rem;
     color: #333;
     
+    
 }
+
+.project1-link {
+    text-decoration: none;
+    background-color:#1a2a6c;
+    color: white !important;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid #1a2a6c;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
 
 .project-link {
     text-decoration: none;
@@ -197,6 +215,13 @@ body {
     padding: 5px 15px;
     border-radius: 5px;
     transition: 0.3s;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.project-item: :last-of-type .project-link {
+    margin-bottom: 0;
 }
 
 .project-link:hover {
