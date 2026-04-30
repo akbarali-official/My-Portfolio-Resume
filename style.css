@@ -178,12 +178,15 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 
 }
 .project-item strong {
     color: #1a2a6c;
+    font-weight: 600;
     font-size: 1.1rem;
+    display: block;
+    margin-bottom: 5px;
     color: #333;
     
     
@@ -200,8 +203,10 @@ body {
     border-radius: 5px;
     transition: 0.3s;
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 20px;
+    min-width: 150px;
+    text-align: center;
 }
 
 
@@ -216,8 +221,10 @@ body {
     border-radius: 5px;
     transition: 0.3s;
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 0px;
+    min-width: 150px;
+    text-align: center;
 }
 
 .project-item: :last-of-type .project-link {
@@ -246,10 +253,10 @@ body {
         gap: 5px;
     }
 
-    .project-link {
+    .project1-link, .project-link {
         display: inline-block;
         margin-top: 10px;
-        width: 100%; /* Mobile par button full width */
+        width: auto%; /* Mobile par button full width */
         text-align: center;
     }
 }
